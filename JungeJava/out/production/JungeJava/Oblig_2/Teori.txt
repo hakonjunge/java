@@ -1,0 +1,52 @@
+Oppgave 1.1
+
+Lag deg en oversikt over hva følgende ord/begreper betyr, med egne ord (lurt å gjøre dette bra nå, kan være nyttig til eksamen):
+
+Class
+En klasse er en blåkopi for å opprette objekter med variabler og metoder. Den fungerer som slags en mal for objektene. Klasser brukes for å lage en enhetlig og generell løsning for lignende objekter.
+
+Object (konseptet, ikke den innebygde Java-klassen)
+Et objekt er en unik ting med egne verdier og funksjoner.
+Det er laget fra en mal kalt en klasse. Du kan tenke på objekter som eksempler på tingene som er definert i klassen.
+For eksempel kan en klasse kalt "Bil" definere egenskaper som merke og farge, og metoder som å kjøre og stoppe.
+Hver bil du oppretter fra denne klassen vil være et unikt objekt med sine egne verdier for merke og farge, og vil kunne kjøre og stoppe.
+
+Instansvariabel
+Instansvariabler er som egenskapene til et objekt.
+For eksempel (velkommen tilbake til bil-sammenligningene), hvis du har en klasse "Bil" med en instansvariabel "merke",
+vil hver bil du oppretter fra denne klassen ha sitt eget merke, som kan være forskjellig fra andre biler.
+
+Overloading
+Når du kaller en overloadet metode, velger Java automatisk den beste versjonen basert på de argumentene du gir.
+Overloading er som å ha flere varianter av en funksjon med samme navn, men med litt forskjellige regler for hvordan den skal brukes
+
+Overriding
+Overriding refererer til å gi en ny implementasjon for en metode som allerede er definert i en overordnet klasse.
+Overriding kan brukes til å tilpasse metoden til de spesifikke behovene til en subklasse, mens den fortsatt gir sine egne tjenester til superklassen.
+
+Extends
+Extends refererer til arveforholdet mellom klasser.
+Når en klasse extender en annen klasse, kalles den en subklasse
+
+Polymorphism
+Polymorphism er at objekter av forskjellige typer kan behandles på samme måte, for eksempel ved å bruke samme metode på dem.
+Dette gjør det mulig å skrive mer generell kode og håndtere forskjellige objekter på en ensartet måte. For eksempel triangel, kvadrat og rektangel.
+
+private,public,(protected) (klasse,variabel,metode)
+I Java er "private", "public" og "protected" tilgangsnivå-modifikatorer som definerer hvilken tilgang en klasse, variabel eller metode har.
+Private betyr at det bare kan brukes inni sin egen klasse.
+Public betyr at det kan brukes av alle klasser.
+Protected betyr at det kan brukes av sin egen klasse og subklasser.
+
+
+this og super
+This og super i Java refererer til objekter.
+This refererer til det nåværende objektet.
+Super refererer til foreldreobjektet.
+
+
+Oppgave 1.2
+
+Hva skjer når vi kompilerer et java-program? Hvorfor må vi gjøre dette?
+Når vi kompilerer et Java-program, oversetter vi programkoden fra Java til maskinkode som datamaskinen kan forstå og utføre.
+Kompileringen sjekker også for feil i programkoden, så å kompilere Java-koden sikrer at programmet vårt fungerer som det skal, og at vi unngår feil når det kjører.
