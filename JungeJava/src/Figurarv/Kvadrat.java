@@ -1,12 +1,11 @@
 package Figurarv;
 
-//arve fra rektangel
 public class Kvadrat extends Rektangel {
     private double side;
 
-    public Kvadrat(double side) {
+    public Kvadrat(double side, String farge) {
         // Kaller konstruktøren til superklassen (Rektangel)
-        super(side, side);
+        super(side, side, farge);
 
         this.side = side;
     }
@@ -15,4 +14,5 @@ public class Kvadrat extends Rektangel {
     public String toString() {
         return "Kvadrat med side " + side;
     }
+
 }

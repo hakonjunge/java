@@ -1,11 +1,11 @@
 
 package Figurarv;
 
-// TODO: 25.01.2023 arve fra figur
 public class Sirkel extends Figur {
     private double radius;
 
-    public Sirkel(double radius) {
+    public Sirkel(double radius, String farge) {
+        super(farge);
         this.radius = radius;
     }
 
@@ -26,5 +26,14 @@ public class Sirkel extends Figur {
 
     public double beregnDiameter() {
         return 2 * radius;
+    }
+
+    @Override
+    public void tegn() {
+        System.out.println(" ______");
+        System.out.println("/      \\");
+        System.out.println("|       |");
+        System.out.println("\\      /");
+        System.out.println("  -----");
     }
 }

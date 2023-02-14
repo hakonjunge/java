@@ -1,21 +1,25 @@
 package Figurarv;
 
-public class Figur {
-    private static final double CM_TIL_METER = 100;
+/**
+ * Klasse som representerer en generisk figur
+ */
+public abstract class Figur implements Tegnbar{
+    private String farge;
+    private static final int CM_TIL_METER = 100;
 
-    public double areal() {
-        return 0;
+    public Figur(String farge) {
+        this.farge = farge;
     }
 
-    public double omkrets() {
-        return 0;
+    public abstract double areal();
+
+    public abstract double omkrets();
+
+    public final double arealIMeter() {
+        return areal() / Math.pow(CM_TIL_METER, 2);
     }
 
-    public double arealIMeter() {
-        return areal() / CM_TIL_METER;
-    }
-
-    public double omkretsIMeter() {
+    public final double omkretsIMeter() {
         return omkrets() / CM_TIL_METER;
     }
 
@@ -36,4 +40,11 @@ public class Figur {
     }
 
 
+    public String getFarge() {
+        return farge;
+    }
+
+    public void setFarge(String farge) {
+        this.farge = farge;
+    }
 }
