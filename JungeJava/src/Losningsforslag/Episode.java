@@ -1,5 +1,8 @@
 package Losningsforslag;
-import java.time.LocalDate;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Episode extends Produksjon {
     private int episodeNr, sesongNr;
 
@@ -16,15 +19,16 @@ public class Episode extends Produksjon {
      * @param sesongNr - sesongnummeret til episoden
      */
 
-    public Episode(String tittel, int episodeNr, int sesongNr, LocalDate utgivelsesdato, String beskrivelse) {
-        super(tittel, 0, utgivelsesdato, beskrivelse);
+    public Episode(String tittel, int episodeNr, int sesongNr) {
+        super(tittel, 0);
         this.episodeNr = episodeNr;
         this.sesongNr = sesongNr;
     }
-    public Episode(String tittel, int episodeNr, int sesongNr, int spilletid, LocalDate utgivelsesdato, String beskrivelse) {
-        super(tittel, spilletid, utgivelsesdato, beskrivelse);
+    public Episode(String tittel, int episodeNr, int sesongNr, int spilletid, Person regissor) {
+        super(tittel, spilletid);
         this.episodeNr = episodeNr;
         this.sesongNr = sesongNr;
+        this.setRegissor(regissor);
     }
 
     public int getEpisodeNr() {
@@ -32,6 +36,7 @@ public class Episode extends Produksjon {
     }
 
     public void setEpisodeNr(int episodeNr) {
+
         this.episodeNr = episodeNr;
     }
 
@@ -47,8 +52,11 @@ public class Episode extends Produksjon {
      * Genererer en string for Episode
      * @return String i formen "NavnPåEpisode - S01E03 - Spilletid: 25"
      */
+
     @Override
     public String toString() {
-        return getTittel() + " - S" + String.format("%02d", getSesongNr()) + "E" + String.format("%02d", getEpisodeNr()) + " - Spilletid: " + getSpilletid();
+        return getTittel() + " - S" + String.format("%02d", getSesongNr()) + "E" + String.format("%02d",
+                getEpisodeNr()) + " - Spilletid: " + getSpilletid() + " - Regissør: " + getRegissor().toString();
     }
+
 }

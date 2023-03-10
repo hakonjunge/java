@@ -89,12 +89,22 @@ public class TVSerie {
         gjennomsnittligSpilletid = sum / episodeListe.size();
     }
 
+
+
+
+
+
     public void leggTilEpisode(Episode episode) {
         episodeListe.add(episode);
         if (episode.getSesongNr() > this.antallSesonger) {
             this.antallSesonger = episode.getSesongNr();
         }
     }
+
+
+
+
+
 
     public void leggTilFlereEpisoder(ArrayList<Episode> episoder) {
         for (Episode episode : episoder) {

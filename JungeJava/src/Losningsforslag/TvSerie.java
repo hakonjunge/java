@@ -2,15 +2,16 @@ package Losningsforslag;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
-public class TvSerie {
+public class TvSerie extends Produksjon{
     private String tittel, beskrivelse;
     private LocalDate utgivelsesDato;
-    private ArrayList<Episode> episoder;
+    private static ArrayList<Episode> episoder;
     private int gjennomsnittligSpilletid, antallSesonger;
 
     public TvSerie(String tittel, String beskrivelse, LocalDate utgivelsesDato) {
-        this.tittel = tittel;
+        super(tittel);
         this.beskrivelse = beskrivelse;
         this.utgivelsesDato = utgivelsesDato;
         episoder = new ArrayList<>();
@@ -88,8 +89,18 @@ public class TvSerie {
         return gjennomsnittligSpilletid;
     }
 
+    public static List<Rolle> getRollebesetning() {
+        List<Rolle> rollebesetning = new ArrayList<>();
+        for (Episode episode : episoder) {
+            List<Rolle> episodeRollebesetning = episode.hentRollebesetning();
+            rollebesetning.addAll(episodeRollebesetning);
+        }
+        return rollebesetning;
+    }
+
+
     @Override
     public String toString() {
-        return tittel +" - " + utgivelsesDato.getYear();
+        return tittel + " - " + utgivelsesDato.getYear();
     }
 }

@@ -110,9 +110,16 @@ public class Main {
 
         System.out.println();
 
+
+
+
         for (Episode episode : season5Episodes) {
             serie1.leggTilEpisode(episode);
         }
+
+
+
+
 
         for (Episode episode : serie1.getEpisodeListe()) {
             System.out.println("Tittel på episode: " + episode.toString());

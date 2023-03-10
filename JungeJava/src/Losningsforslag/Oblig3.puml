@@ -1,0 +1,82 @@
+@startuml
+
+class Film extends Produksjon{
+}
+
+class Produksjon {
+    -tittel: String
+    +Produksjon(tittel: String)
+    +getTittel(): String
+    +setTittel(tittel: String): void
+}
+
+class Episode extends Produksjon{
+    -tittel: String
+    -spilletid: int
+    -sesongNr: int
+    -nummer: int
+    -skuespillere: List<Rolle>
+    +Episode(tittel: String, spilletid: int, sesongNr: int, nummer: int)
+    +getTittel(): String
+    +setTittel(tittel: String): void
+    +getSpilletid(): int
+    +setSpilletid(spilletid: int): void
+    +getSesongNr(): int
+    +setSesongNr(sesongNr: int): void
+    +getNummer(): int
+    +setNummer(nummer: int): void
+    +leggTilRollebesetning(rolle: Rolle): void
+    +hentRollebesetning(): List<Rolle>
+}
+
+class Rolle {
+    -rolleFornavn: String
+    -rolleEtternavn: String
+    -skuespiller: Person
+    +Rolle(rolleFornavn: String, rolleEtternavn: String, skuespiller: Person)
+    +getRolleFornavn(): String
+    +setRolleFornavn(rolleFornavn: String): void
+    +getRolleEtternavn(): String
+    +setRolleEtternavn(rolleEtternavn: String): void
+    +getSkuespiller(): Person
+    +setSkuespiller(skuespiller: Person): void
+    +toString(): String
+}
+
+class Person {
+    -fornavn: String
+    -etternavn: String
+    -fodselsdato: LocalDate
+    +Person(fornavn: String, etternavn: String, fodselsdato: LocalDate)
+    +getFornavn(): String
+    +setFornavn(fornavn: String): void
+    +getEtternavn(): String
+    +setEtternavn(etternavn: String): void
+    +getFodselsdato(): LocalDate
+    +setFodselsdato(fodselsdato: LocalDate): void
+}
+
+class TvSerie extends Produksjon{
+    -tittel: String
+    -beskrivelse: String
+    -utgivelsesDato: LocalDate
+    -episoder: ArrayList<Episode>
+    -gjennomsnittligSpilletid: int
+    -antallSesonger: int
+
+    +TvSerie(tittel: String, beskrivelse: String, utgivelsesDato: LocalDate)
+    +leggTilEpisode(episode: Episode): void
+    +oppdaterGjennomsnittligSpilletid(): void
+    +hentEpisoderISesong(sesong: int): ArrayList<Episode>
+    +getTittel(): String
+    +setTittel(tittel: String): void
+    +getBeskrivelse(): String
+    +setBeskrivelse(beskrivelse: String): void
+    +getUtgivelsesDato(): LocalDate
+    +setUtgivelsesDato(utgivelsesDato: LocalDate): void
+    +getEpisoder(): ArrayList<Episode>
+    +getGjennomsnittligSpilletid(): int
+    +getRollebesetning(): List<Rolle>
+    +toString(): String
+}
+@enduml
