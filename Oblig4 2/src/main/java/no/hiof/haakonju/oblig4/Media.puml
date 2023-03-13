@@ -1,0 +1,59 @@
+@startuml
+
+Person <-- Produksjon
+Person <-- Rolle
+Produksjon o-- Rolle
+TvSerie o-- Episode
+
+
+class Produksjon {
+    - tittel: String
+    - beskrivelse: String
+    - spilletid: int
+    - utgivelsesdato: LocalDate
+    - regissor: Person
+    - rolleListe: ArrayList<Rolle>
+    + leggTilEnRolle(enRolle: Rolle) void
+    + leggTilFlereRoller(flereRoller: ArrayList<Rolle>): void
+}
+
+class Episode extends Produksjon {
+    - episodeNummer: int
+    - sesongNummer: int
+}
+
+class Film extends Produksjon {
+
+}
+
+class Person {
+    - fornavn: String
+    - etternavn: String
+    - fodselsDato: LocalDate
+    + getFulltNavn(): String
+}
+
+
+class Rolle {
+    - rolleFornavn: String
+    - rolleEtternavn: String
+    - skuespiller: Person
+}
+
+class TvSerie {
+    - tittel: String
+    - beskrivelse: String
+    - utgivelsesdato: LocalDate
+    - ArrayList<Episode>: episoder
+    - gjennomSnittligSpilletid: int
+    - antallSesonger: int
+    + leggTilEpsiode(episoden: Episode) void
+    + hentEpisoderISesong(sesongNummer: int): ArrayList<Episode>
+    + hentRollebesetning(): ArrayList<Rolle>
+    + hentRollebesetningMedAntallEpisoderSpilt(): HashMap<Rolle, Integer>
+    + hentAntalletEpisoderEnRolleHarSpilt(enRolle: Rolle): int
+    - oppdaterGjennomsnittligSpilletid(): void
+
+}
+
+@enduml
