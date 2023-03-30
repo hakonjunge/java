@@ -136,7 +136,7 @@ public class TvSerieJSONRepository implements TvSerieRepository {
     }
 
     @Override
-    public Episode opprettEpisode(String tvSerieTittel, int sesongNr, String episodeTittel, String beskrivelse, int episodeNummer, int spilletid, LocalDate utgivelsesdato, String bildeurl) {
+    public Episode createEpisode(String tvSerieTittel, int sesongNr, String episodeTittel, String beskrivelse, int episodeNummer, int spilletid, LocalDate utgivelsesdato, String bildeurl) {
         return null;
     }
 

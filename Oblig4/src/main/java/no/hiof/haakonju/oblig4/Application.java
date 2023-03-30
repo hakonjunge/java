@@ -29,8 +29,8 @@ public class Application {
         app.get("/tvserie", new VueComponent("tvserie-overview"));
         app.get("/tvserie/{tvserie-id}/sesong/{sesong-nr}", new VueComponent("tvserie-detail"));
         app.get("/tvserie/{tvserie-id}/sesong/{sesong-nr}/episode/{episode-nr}", new VueComponent("episode-detail"));
-        app.get("/tvserie/{tvserieId}/sesong/{sesongNr}/episode/{episodeNr}/deleteepisode", new VueComponent(
-                "episode-update"));
+        app.get("/tvserie/{tvserie-id}/createepisode", new VueComponent("episode-create"));
+        app.get("/tvserie/{tvserieId}/sesong/{sesongNr}/episode/{episodeNr}/deleteepisode", new VueComponent("episode-update"));
 
         String csvFilePath = "src/main/resources/tekstfiler/tvshows_10.csv";
         File csvFile = new File(csvFilePath);
@@ -50,6 +50,7 @@ public class Application {
 
         app.get("api/tvserie/{tvserie-id}/sesong/{sesong-nr}", episodeController::getEpisoderISesong);
         app.get("api/tvserie/{tvserie-id}/sesong/{sesong-nr}/episode/{episode-nr}", episodeController::getEpisode);
+        app.post("/api/tvserie/{tvserie-id}/createepisode", ctx -> episodeController.createEpisode.handle(ctx));
         app.delete("/api/tvserie/{tvserieId}/sesong/{sesongNr}/episode/{episodeNr}/deleteepisode",
                 episodeController::slettEpisode);
 

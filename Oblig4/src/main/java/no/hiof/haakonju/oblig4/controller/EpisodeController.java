@@ -1,10 +1,14 @@
 package no.hiof.haakonju.oblig4.controller;
 
 import io.javalin.http.Context;
+import io.javalin.http.Handler;
 import no.hiof.haakonju.oblig4.model.Episode;
 import no.hiof.haakonju.oblig4.model.Produksjon;
+import no.hiof.haakonju.oblig4.repository.TvSerieCSVRepository;
 import no.hiof.haakonju.oblig4.repository.TvSerieRepository;
 
+import java.io.File;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -36,6 +40,7 @@ public class EpisodeController {
         context.json(episoder);
     }
 
+
     public void getEpisode(Context context) {
         String tvSerieTittel = context.pathParam("tvserie-id");
         String sesongNr = context.pathParam("sesong-nr");
@@ -57,6 +62,23 @@ public class EpisodeController {
             context.status(404); // Not Found
         }
     }
+    public static Handler createEpisode = ctx -> {
+        String tvSerieTittel = ctx.pathParam("tvserie-id");
+        int sesongNr = sesong == null || sesong.isEmpty() ? 1 : Integer.parseInt(sesong);
+        int episodeNummer = Integer.parseInt(ctx.formParam("episodeNummer"));
+        String episodeTittel = ctx.formParam("episodeTittel");
+        String beskrivelse = ctx.formParam("beskrivelse");
+        int spilletid = Integer.parseInt(ctx.formParam("spilletid"));
+        LocalDate utgivelsesdato = LocalDate.parse(ctx.formParam("utgivelsesdato"));
+        String bildeurl = ctx.formParam("bildeurl");
 
+        TvSerieCSVRepository tvSerieRepository = new TvSerieCSVRepository(new File("/tekstfiler/tvshows_10.csv"));
 
+        if (tvSerieRepository.leggTilEpisode(tvSerieTittel, new Episode(episodeTittel, beskrivelse, episodeNummer, sesongNr, spilletid, utgivelsesdato, bildeurl))) {
+            ctx.redirect("/tvserie/" + tvSerieTittel + "/sesong/" + sesongNr);
+        } else {
+            ctx.status(400).result("Kunne ikke opprette episode");
+        }
+    };
 }
+

@@ -5,103 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfde0b90-5a0d-41d7-a46a-53ba28c15eed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/controller/EpisodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/controller/TvSerieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/repository/TvSerieDataRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/repository/TvSerieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/resources/vue.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/resources/vue/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/resources/vue/view/episode-detail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/resources/vue/view/tvserie-detail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/resources/vue/view/tvserie-overview.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Oblig4 3/src/main/java/no/hiof/haakonju/oblig4/Oblig3_ProposedSolution.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/Episode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/Produksjon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/Rolle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/TvSerie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tekstfiler/tvshows_10.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tekstfiler/tvshows_10.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tekstfiler/tvshows_10_with_headers.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tekstfiler/tvshows_10_with_roles.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/vue/view/episode-create.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/vue/view/episode-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Oblig4_SATURN_BenjaminErnestoLeonBriceno/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Oblig5_JUPITER_BenjaminErnestoLeonBriceno.zip/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/ThreadsBankAccount.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/out/production/ThreadsBankAccount/BankAccount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/out/production/ThreadsBankAccount/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/out/production/ThreadsBankAccount/TransactionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/src/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsBankAccount/src/TransactionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/out/production/threads/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/src/RunnableCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/src/ThreadCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../threads/threads.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/controller/TvSerieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/controller/TvSerieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/model/Episode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/model/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Produksjon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/model/Produksjon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Rolle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/model/Rolle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/TvSerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/java/no/hiof/haakonju/losningsforslag/model/TvSerie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/~$lig4_HåkonJunge.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/vue/view/episode-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vue/view/episode-detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/vue/view/hello-world.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Losningsforslag/src/main/resources/vue/view/hello-world.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/vue/view/tvserie-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vue/view/tvserie-detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/vue/view/tvserie-overview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vue/view/tvserie-overview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/controller/EpisodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/controller/EpisodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/controller/TvSerieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/controller/TvSerieController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Episode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Film.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Produksjon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Rolle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/TvSerie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vue/view/episode-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vue/view/episode-detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vue/view/hello-world.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vue/view/tvserie-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vue/view/tvserie-detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vue/view/tvserie-overview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vue/view/tvserie-overview.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +99,7 @@
       <workItem from="1678706180239" duration="16000" />
       <workItem from="1679928141589" duration="866000" />
       <workItem from="1679997949449" duration="4798000" />
-      <workItem from="1680042606197" duration="22555000" />
+      <workItem from="1680042606197" duration="26088000" />
     </task>
     <servers />
   </component>

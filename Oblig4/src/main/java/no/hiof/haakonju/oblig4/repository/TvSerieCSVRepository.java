@@ -8,7 +8,6 @@ import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.io.File;
 
 public class TvSerieCSVRepository implements TvSerieRepository {
@@ -106,8 +105,8 @@ public class TvSerieCSVRepository implements TvSerieRepository {
 
 
     @Override
-    public Episode opprettEpisode(String tvSerieTittel, int sesongNr, String episodeTittel, String beskrivelse, int episodeNummer,
-                                  int spilletid, LocalDate utgivelsesdato, String bildeurl) {
+    public Episode createEpisode(String tvSerieTittel, int sesongNr, String episodeTittel, String beskrivelse, int episodeNummer,
+                                 int spilletid, LocalDate utgivelsesdato, String bildeurl) {
         TvSerie tvSerie = tvSerieMap.get(tvSerieTittel);
         if (tvSerie != null) {
             Episode episode = new Episode(episodeTittel, beskrivelse, episodeNummer, sesongNr, spilletid, utgivelsesdato, bildeurl);
