@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cfde0b90-5a0d-41d7-a46a-53ba28c15eed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Dyrepark.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/SortereDyrPaaFodselsdato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/pom1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/DyreparkRepository/DyreparkDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/DyreparkRepository/DyreparkRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/controller/DyreparkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/dyrepark/Dyr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/dyrepark/Dyrepark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/dyrepark/Dyrepark.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/dyrepark/HonningGrevling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/dyrepark/Panda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/dyrepark/Sjimpanse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/java/no/hiof/haakonju/dyrepark/dyrepark/SortereDyrPaaFodselsdato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/resources/vue/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/resources/vue/views/dyr-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/resources/vue/views/dyrepark-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloDyrepark/src/main/resources/vue/views/hello-world.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJavalin/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJavalin/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJavalin/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJavalin/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJavalin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJavalin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJavalin/src/main/java/no/hiof/haakonju/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloJavalin/src/main/java/org/example/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Oblig3.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Rolle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Media.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Oblig3_ProposedSolution.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/controller/TvSerieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Episode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Produksjon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/Rolle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data/TvSerie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/vue/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/vue/view/episode-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/vue/view/hello-world.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/vue/view/tvserie-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/vue/view/tvserie-overview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Episode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Film.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Produksjon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/Rolle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/data/TvSerie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vue/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vue/view/episode-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vue/view/hello-world.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vue/view/tvserie-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vue/view/tvserie-overview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/src/main/java/no/hiof/haakonju/superhelter/Superhero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/src/main/resources/Lambda.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/target/classes/no/hiof/haakonju/superhelter/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhelter/target/classes/no/hiof/haakonju/superhelter/Superhero.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/Superhero.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/out/production/Superhero/superhelter/Main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/out/production/Superhero/superhelter/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/out/production/Superhero/superhelter/Superhero.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/src/superhelter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Superhero/src/superhelter/Superhero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/filskriving.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/novelle.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/out/production/filskriving/no/hiof/haakonju/filskriving/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/src/no/hiof/haakonju/filskriving/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/src/no/hiof/haakonju/filskriving/MainCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/src/no/hiof/haakonju/filskriving/Superhero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filskriving/superheroes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/out/production/Dyrepark/no/hiof/haakonju/dyrepark/Dyr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/out/production/Dyrepark/no/hiof/haakonju/dyrepark/Dyr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/out/production/Dyrepark/no/hiof/haakonju/dyrepark/HonningGrevling.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/out/production/Dyrepark/no/hiof/haakonju/dyrepark/HonningGrevling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/out/production/Dyrepark/no/hiof/haakonju/dyrepark/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/out/production/Dyrepark/no/hiof/haakonju/dyrepark/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/out/production/Dyrepark/no/hiof/haakonju/dyrepark/Sjimpanse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/out/production/Dyrepark/no/hiof/haakonju/dyrepark/Sjimpanse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Dyr.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Dyr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Dyrepark.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Dyrepark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/HonningGrevling.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/HonningGrevling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Sjimpanse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyrepark/src/no/hiof/haakonju/dyrepark/Sjimpanse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/Episode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/Episode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/Film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/Produksjon.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/Produksjon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/TvSerie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/out/production/JungeJava/Losningsforslag/TvSerie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Episode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Produksjon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/Produksjon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/TvSerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/src/Losningsforslag/TvSerie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/src/Oblig_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/src/Oblig_2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JungeJava/src/Oblig_2/TVSerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JungeJava/src/Oblig_2/TVSerie.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Mj2b47oDYnZtgUbzxZoGbHaCAO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/hakonjunge/Documents/GitHub/java/Oblig4/src/main/java/no/hiof/haakonju/oblig4/data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data" />
+      <recent name="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cfde0b90-5a0d-41d7-a46a-53ba28c15eed" name="Changes" comment="" />
+      <created>1678266741518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678266741518</updated>
+      <workItem from="1678266743258" duration="22839000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

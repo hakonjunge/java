@@ -22,15 +22,14 @@ Episode:
   <div class="content-wrapper">
     <div v-if="tvserie" class="detail-tvserie-container">
       <img v-if="tvserie.bildeUrl" class="cover-image" v-bind:src="tvserie.bildeUrl">
-      <img v-else class="cover-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Stranger_Things_Rasmiy_posteri.jpg/405px-Stranger_Things_Rasmiy_posteri.jpg">
-
+      <img v-else class="cover-image" src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg">
 
       <h1 v-if="tvserie.tittel">{{tvserie.tittel}}</h1>
       <h1 v-else class="error">TvSerie må ha get-metode for "tittel"</h1>
       <p v-if="tvserie.beskrivelse">{{tvserie.beskrivelse}}.</p>
       <p v-else>TvSerie må ha get-metode for "beskrivelse".</p>
       <p>{{tvserie.tittel}} har {{episoder.length}} episoder i sesong {{sesongNr}}.</p>
-
+      <p><a class="button" class="add" :href="`/tvserie/${tvserie.tittel}/createepisode`">Opprett episode i sesong {{sesongNr}}</a></p>
     </div>
 
     <div v-if="tvserie" class="filter-menu">
@@ -71,7 +70,7 @@ Episode:
           <div class="single-episode-container">
             <h1>E{{episode.episodeNummer}} - {{episode.tittel}}</h1>
             <img v-if="episode.bildeUrl" class="list-image" v-bind:src="episode.bildeUrl">
-            <img v-else class="list-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Stranger_Things_Rasmiy_posteri.jpg/405px-Stranger_Things_Rasmiy_posteri.jpg">
+            <img v-else class="list-image" src="https://image.tmdb.org/t/p/w500/exT4NW9EdXG1qLZHKJnRpq3gh1H.jpg">
           </div>
         </a>
       </li>
@@ -107,7 +106,7 @@ app.component("tvserie-detail", {
         .then(res => res.json())
         .then(json => {this.episoder = json})
         .catch(() => alert("Feil ved uthenting av episoder.\n" +
-            "Har du laget en get-path i formatet: /api/tvserie/{tvserie-id}/sesong/{sesong-id}\n" +
+            "Har du laget en get-path i formatet: /api/tvserie/{tvserie-id}/sesong/{sesong-nr}\n" +
             "som gir en liste med episoder?"));
 
   }

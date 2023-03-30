@@ -1,39 +1,30 @@
 package no.hiof.haakonju.oblig4.controller;
 
 import io.javalin.http.Context;
-import no.hiof.haakonju.oblig4.data.Episode;
-import no.hiof.haakonju.oblig4.data.TvSerie;
+import no.hiof.haakonju.oblig4.model.Episode;
+import no.hiof.haakonju.oblig4.model.TvSerie;
+import no.hiof.haakonju.oblig4.repository.TvSerieCSVRepository;
 import no.hiof.haakonju.oblig4.repository.TvSerieRepository;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.File;
 
 public class TvSerieController {
-    private TvSerieRepository tvSerieRepository;
+    private String filePath = "src/main/resources/tekstfiler/tvshows_10.csv";
+    private File csvFile = new File(filePath);
+    private TvSerieRepository tvSerieRepository = new TvSerieCSVRepository(csvFile);
 
     public TvSerieController(TvSerieRepository tvSerieRepository) {
         this.tvSerieRepository = tvSerieRepository;
     }
 
-    public void getAlleTvserier(Context context) {
-        String tittel = context.pathParam("tvserie-id");
-
-        ArrayList<TvSerie> alleTvSerier = tvSerieRepository.getAlleTvserier(tittel);
-
-        context.json(alleTvSerier);
+    public void getAlleTvSerier(Context ctx) {
+        ctx.json(tvSerieRepository.getTVSerier());
     }
 
-    public void getTvserie(Context context) {
-        String tittel = context.pathParam("tvserie-id");
+    public void getTVSerie(Context context) {
+        String tvSerieId = context.pathParam("tvserie-id");
 
-        int antallsesonger = Integer.parseInt(context.pathParam("tvserie-id"));
-
-        TvSerie tvSerie = tvSerieRepository.getTvserie("tittel", antallsesonger);
-
-        context.json(tvSerie);
+        context.json(tvSerieRepository.getTvSerie(tvSerieId));
     }
 
 }
-
-
-

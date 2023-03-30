@@ -1,14 +1,13 @@
 package no.hiof.haakonju.oblig4.controller;
 
 import io.javalin.http.Context;
-import no.hiof.haakonju.oblig4.data.Episode;
-import no.hiof.haakonju.oblig4.repository.TvSerieDataRepository;
+import no.hiof.haakonju.oblig4.model.Episode;
+import no.hiof.haakonju.oblig4.model.Produksjon;
 import no.hiof.haakonju.oblig4.repository.TvSerieRepository;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-
 
 public class EpisodeController {
     private TvSerieRepository tvSerieRepository;
@@ -17,36 +16,47 @@ public class EpisodeController {
         this.tvSerieRepository = tvSerieRepository;
     }
 
-    public void getAlleEpisoder(Context context) {
-        String tittel = context.pathParam("episode-nr");
+    public void getEpisoderISesong(Context context) {
+        String tvSerieTittel = context.pathParam("tvserie-id");
+        String sesong = context.pathParam("sesong-nr");
+        String sortering = context.queryParam("sortering");
 
-        ArrayList<Episode> alleEpisoder = tvSerieRepository.getAlleEpisoder(tittel);
-        sorterEpisoder(context);
-        context.json(alleEpisoder);
+        int sesongNr = sesong.isEmpty()? 1 : Integer.parseInt(sesong);
+
+        ArrayList<Episode> episoder = tvSerieRepository.getEpisoderISesong(tvSerieTittel, sesongNr);
+
+        if (sortering != null) {
+            switch (sortering) {
+                case "episodenr" -> Collections.sort(episoder);
+                case "tittel" -> episoder.sort((e1, e2) -> e1.getTittel().compareTo(e2.getTittel()));
+                case "spilletid" -> episoder.sort(Comparator.comparingInt(Produksjon::getSpilletid));
+            }
+        }
+
+        context.json(episoder);
     }
 
     public void getEpisode(Context context) {
-        String tittel = context.pathParam("episode-nr");
+        String tvSerieTittel = context.pathParam("tvserie-id");
+        String sesongNr = context.pathParam("sesong-nr");
+        String episodeNr = context.pathParam("episode-nr");
 
-        int episodeNummer = Integer.parseInt(context.pathParam("episode-nr"));
+        context.json(tvSerieRepository.getEpisode(tvSerieTittel, Integer.parseInt(sesongNr), Integer.parseInt(episodeNr)));
 
-        Episode episode = tvSerieRepository.getEpisode("tittel", episodeNummer);
-        sorterEpisoder(context);
-        context.json(episode);
+    }
+    public void slettEpisode(Context context) {
+        String tvSerieTittel = context.pathParam("tvserie-tittel");
+        int sesongNr = Integer.parseInt(context.pathParam("sesong-nr"));
+        int episodeNr = Integer.parseInt(context.pathParam("episode-nr"));
+
+        boolean episodeSlettet = tvSerieRepository.slettEpisode(tvSerieTittel, sesongNr, episodeNr);
+
+        if (episodeSlettet) {
+            context.status(204); // No Content
+        } else {
+            context.status(404); // Not Found
+        }
     }
 
-    public void sorterEpisoder(Context context) {
-        String tittel = context.queryParam("sortering");
-        ArrayList<Episode> getAllEpsiodes = tvSerieRepository.getAlleEpisoder(tittel);
-
-        Collections.sort(getAllEpsiodes, new Comparator<Episode>() {
-            @Override
-            public int compare(Episode episode1, Episode episode2) {
-                return Integer.compare(episode1.getEpisodeNummer(), episode2.getEpisodeNummer());
-            }
-        });
-
-        context.json(getAllEpsiodes);
-    }
 
 }

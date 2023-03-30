@@ -19,7 +19,7 @@ TvSerie:
                       <h2 v-else class="error">TvSerie må ha instansvariabelen "tittel"</h2>
 
                       <img v-if="tvserie?.bildeUrl" class="cover-image" v-bind:src="tvserie.bildeUrl">
-                      <img v-else class="cover-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Stranger_Things_Rasmiy_posteri.jpg/405px-Stranger_Things_Rasmiy_posteri.jpg">
+                      <img v-else class="cover-image" src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg">
                     </div>
                 </a>
             </li>
@@ -30,8 +30,7 @@ TvSerie:
     app.component("tvserie-overview", {
         template: "#tvserie-overview",
         data: () => ({
-          tvserier: [],
-
+          tvserier: []
         }),
         created() {
             fetch("/api/tvserie")
@@ -72,7 +71,7 @@ TvSerie:
 
     div.single-tvserie-container{
         overflow: hidden;
-        width: 500px;
+        width: 300px;
         background-color: #000000;
         margin: 0 auto;
         opacity: 0.96;
