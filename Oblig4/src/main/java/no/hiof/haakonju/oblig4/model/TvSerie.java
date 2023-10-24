@@ -31,7 +31,7 @@ public class TvSerie {
 
     public void leggTilEpisode(Episode episoden) {
         // Undersøker om episoden sitt sesongNummer er høyere enn antallSesonger pluss 1
-        if (episoden.getSesongNummer() <= antallSesonger + 1) {
+        if (episoden.getSesongNummer() <= antallSesonger +1) {
             // Legger til episode til listen
             this.episoder.add(episoden);
             // Oppdaterer gjennomsnittligspilletid
@@ -41,8 +41,9 @@ public class TvSerie {
             if (antallSesonger < episoden.getSesongNummer()) {
                 antallSesonger = episoden.getSesongNummer();
             }
-        } else {
-            System.out.println("FEIL: Episoden " + episoden + " kan ikke være høyere enn sesong: " + (antallSesonger + 1));
+        }
+        else {
+            System.out.println("FEIL: Episoden " + episoden + " kan ikke være høyere enn sesong: " + (antallSesonger +1));
         }
     }
 
@@ -112,7 +113,8 @@ public class TvSerie {
                     Integer antallSpilt = rolleBesetning.get(enRolle);
                     // Vi erstatter så antalletspiltverdien med den gamle verdien + 1
                     rolleBesetning.replace(enRolle, ++antallSpilt);
-                } else {
+                }
+                else {
                     // Hvis vi ikke har den fra før, legg den til og sett antallet episoder spilt til 1
                     rolleBesetning.put(enRolle, 1);
                 }
@@ -195,7 +197,6 @@ public class TvSerie {
         return null;
 
     }
-
     public boolean fjernEpisode(Episode episodeToRemove) {
         return episoder.remove(episodeToRemove);
     }
@@ -208,10 +209,12 @@ public class TvSerie {
                 break;
             }
         }
+
         if (episode != null) {
             episoder.remove(episode);
             return true;
         }
+
         return false;
     }
 }

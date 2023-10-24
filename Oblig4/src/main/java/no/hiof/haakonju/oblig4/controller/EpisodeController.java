@@ -25,7 +25,7 @@ public class EpisodeController {
         String sesong = context.pathParam("sesong-nr");
         String sortering = context.queryParam("sortering");
 
-        int sesongNr = sesong.isEmpty()? 1 : Integer.parseInt(sesong);
+        int sesongNr = sesong.isEmpty() ? 1 : Integer.parseInt(sesong);
 
         ArrayList<Episode> episoder = tvSerieRepository.getEpisoderISesong(tvSerieTittel, sesongNr);
 
@@ -49,6 +49,7 @@ public class EpisodeController {
         context.json(tvSerieRepository.getEpisode(tvSerieTittel, Integer.parseInt(sesongNr), Integer.parseInt(episodeNr)));
 
     }
+
     public void slettEpisode(Context context) {
         String tvSerieTittel = context.pathParam("tvserie-tittel");
         int sesongNr = Integer.parseInt(context.pathParam("sesong-nr"));
@@ -62,9 +63,27 @@ public class EpisodeController {
             context.status(404); // Not Found
         }
     }
-    public static Handler createEpisode = ctx -> {
+
+    public void updateEpisode(Context ctx) {
         String tvSerieTittel = ctx.pathParam("tvserie-id");
-        int sesongNr = sesong == null || sesong.isEmpty() ? 1 : Integer.parseInt(sesong);
+        int sesongNr = Integer.parseInt(ctx.pathParam("sesong-nr"));
+        int episodeNr = Integer.parseInt(ctx.pathParam("episode-nr"));
+        String episodeTittel = ctx.formParam("episodeTittel");
+        String beskrivelse = ctx.formParam("beskrivelse");
+        int spilletid = Integer.parseInt(ctx.formParam("spilletid"));
+        LocalDate utgivelsesdato = LocalDate.parse(ctx.formParam("utgivelsesdato"));
+        String bildeurl = ctx.formParam("bildeurl");
+
+        if (tvSerieRepository.updateEpisode(tvSerieTittel, sesongNr, episodeNr, episodeTittel, beskrivelse, spilletid, utgivelsesdato, bildeurl)) {
+            ctx.redirect("/tvserie/" + tvSerieTittel + "/sesong/" + sesongNr + "/episode/" + episodeNr);
+        } else {
+            ctx.status(400).result("Kunne ikke oppdatere episode");
+        }
+    }
+
+    public void createEpisode(Context ctx) {
+        String tvSerieTittel = ctx.pathParam("tvserie-id");
+        int sesongNr = Integer.parseInt(ctx.formParam("sesongNr"));
         int episodeNummer = Integer.parseInt(ctx.formParam("episodeNummer"));
         String episodeTittel = ctx.formParam("episodeTittel");
         String beskrivelse = ctx.formParam("beskrivelse");
@@ -72,13 +91,21 @@ public class EpisodeController {
         LocalDate utgivelsesdato = LocalDate.parse(ctx.formParam("utgivelsesdato"));
         String bildeurl = ctx.formParam("bildeurl");
 
-        TvSerieCSVRepository tvSerieRepository = new TvSerieCSVRepository(new File("/tekstfiler/tvshows_10.csv"));
-
         if (tvSerieRepository.leggTilEpisode(tvSerieTittel, new Episode(episodeTittel, beskrivelse, episodeNummer, sesongNr, spilletid, utgivelsesdato, bildeurl))) {
             ctx.redirect("/tvserie/" + tvSerieTittel + "/sesong/" + sesongNr);
         } else {
             ctx.status(400).result("Kunne ikke opprette episode");
         }
-    };
+    }
+    private Episode mapEpisodeFromForm(Context ctx) {
+        String episodeTittel = ctx.formParam("episodeTittel");
+        String beskrivelse = ctx.formParam("beskrivelse");
+        int spilletid = Integer.parseInt(ctx.formParam("spilletid"));
+        LocalDate utgivelsesdato = LocalDate.parse(ctx.formParam("utgivelsesdato"));
+        String bildeurl = ctx.formParam("bildeurl");
+
+        return new Episode(episodeTittel, beskrivelse, 0, 0, spilletid, utgivelsesdato, bildeurl);
+    }
 }
+
 

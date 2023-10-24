@@ -23,36 +23,39 @@ public class Application {
             config.vue.vueAppName = "app";
         }).start(8100);
 
-
         app.before("/", ctx -> ctx.redirect("/tvserie"));
 
         app.get("/tvserie", new VueComponent("tvserie-overview"));
         app.get("/tvserie/{tvserie-id}/sesong/{sesong-nr}", new VueComponent("tvserie-detail"));
         app.get("/tvserie/{tvserie-id}/sesong/{sesong-nr}/episode/{episode-nr}", new VueComponent("episode-detail"));
         app.get("/tvserie/{tvserie-id}/createepisode", new VueComponent("episode-create"));
-        app.get("/tvserie/{tvserieId}/sesong/{sesongNr}/episode/{episodeNr}/deleteepisode", new VueComponent("episode-update"));
+        app.get("/tvserie/{tvserie-id}/sesong/{sesong-nr}/episode/{episode-nr}/updateepisode", new VueComponent("episode-update"));
 
         String csvFilePath = "src/main/resources/tekstfiler/tvshows_10.csv";
         File csvFile = new File(csvFilePath);
         TvSerieCSVRepository tvSerieRepository = new TvSerieCSVRepository(csvFile);
 
-        //TvSerieJSONRepository tvSerieJSONRepository = new TvSerieJSONRepository("/tekstfiler/tvshows_10.json");
+        TvSerieJSONRepository tvSerieJSONRepository = new TvSerieJSONRepository("/tekstfiler/tvshows_10.json");
         TvSerieCSVRepository tvSerieCSVRepository = new TvSerieCSVRepository(csvFile);
         TvSerieController tvSerieController = new TvSerieController(tvSerieCSVRepository);
         EpisodeController episodeController = new EpisodeController(tvSerieCSVRepository);
 
-
-        app.get("/api/tvserie", tvSerieController::getAlleTvSerier);
+        app.get("api/tvserie", new Handler() {
+            @Override
+            public void handle(Context ctx) throws Exception {
+                tvSerieController.getAlleTvSerier(ctx);
+            }
+        });
 
 
         app.get("api/tvserie/{tvserie-id}", context -> tvSerieController.getTVSerie(context));
 
-
+        app.get("/api/tvserie", tvSerieController::getAlleTvSerier);
         app.get("api/tvserie/{tvserie-id}/sesong/{sesong-nr}", episodeController::getEpisoderISesong);
         app.get("api/tvserie/{tvserie-id}/sesong/{sesong-nr}/episode/{episode-nr}", episodeController::getEpisode);
-        app.post("/api/tvserie/{tvserie-id}/createepisode", ctx -> episodeController.createEpisode.handle(ctx));
-        app.delete("/api/tvserie/{tvserieId}/sesong/{sesongNr}/episode/{episodeNr}/deleteepisode",
-                episodeController::slettEpisode);
+        app.post("/api/tvserie/{tvserie-id}/sesong/{sesong-nr}/episode/{episode-nr}/updateepisode", episodeController::updateEpisode);
+        app.post("/api/tvserie/{tvserie-id}/createepisode", episodeController::createEpisode);
+        app.get("/api/tvserie/{tvserie-id}/sesong/{sesong-nr}/episode/{episode-nr}/deleteepisode", episodeController::slettEpisode);
 
     }
 }

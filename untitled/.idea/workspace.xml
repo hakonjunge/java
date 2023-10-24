@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c7f0d77-146b-43f5-a723-f0314b74b63f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/Eksamen1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/src/pakke/AvspillingsKontroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/src/pakke/BildeSekvens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/src/pakke/Lyd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eksamen1/src/pakke/LydSamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oblig4JAVALIN/src/main/java/no/hiof/haakonju/oblig4/Oblig3_ProposedSolution.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zoo/src/main/java/no/hiof/haakonju/zoo/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zoo/src/main/java/no/hiof/haakonju/zoo/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zoo/src/main/java/no/hiof/haakonju/zoo/Elephant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zoo/src/main/java/no/hiof/haakonju/zoo/Lion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zoo/src/main/java/no/hiof/haakonju/zoo/Zoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zoo/src/test/java/no/hiof/haakonju/zoo/AnimalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../enum/enum.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/src/main/java/no/hiof/haakonju/game/PlayerCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/src/test/java/no/hiof/haakonju/game/PlayerCharacterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/model/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/model/Episode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/model/TvSerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/model/TvSerie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/resources/tekstfiler/tvshows_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/resources/tekstfiler/tvshows_10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/model/TvSerie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/model/TvSerie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/tekstfiler/tvshows_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/tekstfiler/tvshows_10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2OgdhNCnRxivHNw9Z1nvtDd6Tux" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c7f0d77-146b-43f5-a723-f0314b74b63f" name="Changes" comment="" />
+      <created>1681986278749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681986278749</updated>
+      <workItem from="1681986280430" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

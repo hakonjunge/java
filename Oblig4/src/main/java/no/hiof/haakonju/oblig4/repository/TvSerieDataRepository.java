@@ -47,12 +47,6 @@ public class TvSerieDataRepository implements TvSerieRepository {
     public boolean leggTilTvSerie(TvSerie tvSerie) {
         return false;
     }
-
-    @Override
-    public boolean leggTilEpisode(String tvSerieTittel, int sesongNr, Episode episode) {
-        return false;
-    }
-
     @Override
     public boolean oppdaterTvSerie(TvSerie tvSerie) {
         return false;
@@ -79,6 +73,11 @@ public class TvSerieDataRepository implements TvSerieRepository {
     }
 
     @Override
+    public boolean updateEpisode(String tvSerieTittel, int sesongNr, int episodeNr, String episodeTittel, String beskrivelse, int spilletid, LocalDate utgivelsesdato, String bildeurl) {
+        return false;
+    }
+
+    @Override
     public Episode createEpisode(String tvSerieTittel, int sesongNr, String episodeTittel, String beskrivelse, int episodeNummer, int spilletid, LocalDate utgivelsesdato, String bildeurl) {
         return null;
     }
@@ -86,6 +85,16 @@ public class TvSerieDataRepository implements TvSerieRepository {
     @Override
     public boolean oppdaterEpisode(String tvSerieTittel, int sesongNr, int episodeNr, String episodeTittel, String beskrivelse, int spilletid, LocalDate utgivelsesdato, String bildeurl) {
         return false;
+    }
+
+    @Override
+    public void opprettEpisode(String tvSerieTittel, String tittel, String beskrivelse, int episodeNummer, int sesongNummer, int spilletid, LocalDate utgivelsesdato, String bildeUrl) {
+
+    }
+
+    @Override
+    public void oppdaterEpisode(String tvSerieTittel, String tittel, int sesongNummer, int episodeNummer, String beskrivelse, int spilletid, LocalDate utgivelsesdato, String bildeUrl) {
+
     }
 
 

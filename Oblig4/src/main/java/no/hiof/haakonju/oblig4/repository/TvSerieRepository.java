@@ -17,8 +17,6 @@ public interface TvSerieRepository {
 
     boolean leggTilTvSerie(TvSerie tvSerie);
 
-    boolean leggTilEpisode(String tvSerieTittel, int sesongNr, Episode episode);
-
     boolean oppdaterTvSerie(TvSerie tvSerie);
 
     boolean slettTvSerie(String tvSerieTittel);
@@ -27,11 +25,18 @@ public interface TvSerieRepository {
 
     boolean oppdaterEpisode(String tvSerieTittel, int sesongNr, int episodeNr, Episode oppdatertEpisode);
 
-    boolean slettEpisode(String tvSerieTittel, int sesongNr, int episodeNr);
 
     Episode createEpisode(String tvSerieTittel, int sesongNr, String episodeTittel, String beskrivelse, int episodeNummer,
                           int spilletid, LocalDate utgivelsesdato, String bildeurl);
 
     boolean oppdaterEpisode(String tvSerieTittel, int sesongNr, int episodeNr, String episodeTittel, String beskrivelse,
                             int spilletid, LocalDate utgivelsesdato, String bildeurl);
+    void opprettEpisode(String tvSerieTittel, String tittel, String beskrivelse, int episodeNummer, int sesongNummer, int spilletid, LocalDate utgivelsesdato, String bildeUrl);
+
+    void oppdaterEpisode(String tvSerieTittel, String tittel, int sesongNummer, int episodeNummer, String beskrivelse, int spilletid, LocalDate utgivelsesdato, String bildeUrl);
+
+    boolean slettEpisode(String tittel, int episodeNr, int sesongNr);
+
+    boolean updateEpisode(String tvSerieTittel, int sesongNr, int episodeNr, String episodeTittel, String beskrivelse,
+                          int spilletid, LocalDate utgivelsesdato, String bildeurl);
 }

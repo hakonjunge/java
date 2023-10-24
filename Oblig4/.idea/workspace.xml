@@ -8,16 +8,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/Episode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/TvSerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/model/TvSerie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tekstfiler/tvshows_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tekstfiler/tvshows_10.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/controller/EpisodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/controller/EpisodeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/model/TvSerie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/model/TvSerie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tekstfiler/tvshows_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tekstfiler/tvshows_10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,8 +79,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="no.hiof.haakonju.oblig4.controller" />
       <recent name="no.hiof.haakonju.oblig4.repository" />
+      <recent name="no.hiof.haakonju.oblig4.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -99,7 +104,8 @@
       <workItem from="1678706180239" duration="16000" />
       <workItem from="1679928141589" duration="866000" />
       <workItem from="1679997949449" duration="4798000" />
-      <workItem from="1680042606197" duration="26088000" />
+      <workItem from="1680042606197" duration="34026000" />
+      <workItem from="1680267783167" duration="105000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cfde0b90-5a0d-41d7-a46a-53ba28c15eed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Oblig4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/controller/EpisodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/model/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/model/Episode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/model/TvSerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/model/TvSerie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/java/no/hiof/haakonju/oblig4/repository/TvSerieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/src/main/resources/tekstfiler/tvshows_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/src/main/resources/tekstfiler/tvshows_10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/model/TvSerie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/model/TvSerie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieCSVRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieDataRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieJSONRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/no/hiof/haakonju/oblig4/repository/TvSerieRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4/target/classes/tekstfiler/tvshows_10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4/target/classes/tekstfiler/tvshows_10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Oblig4_ProposedSolution/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Mj2b47oDYnZtgUbzxZoGbHaCAO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hakonjunge/Documents/GitHub/java/Oblig4JAVALIN&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4/data" />
+      <recent name="$PROJECT_DIR$/src/main/java/no/hiof/haakonju/oblig4" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Oblig4JAVALIN" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Oblig4JAVALIN" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cfde0b90-5a0d-41d7-a46a-53ba28c15eed" name="Changes" comment="" />
+      <created>1678266741518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678266741518</updated>
+      <workItem from="1678266743258" duration="22839000" />
+      <workItem from="1680266654982" duration="966000" />
+      <workItem from="1680267786815" duration="231000" />
+      <workItem from="1681287095918" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

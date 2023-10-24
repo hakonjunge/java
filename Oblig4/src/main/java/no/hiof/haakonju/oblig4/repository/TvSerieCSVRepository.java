@@ -9,14 +9,20 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.io.File;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class TvSerieCSVRepository implements TvSerieRepository {
     private File filnavn;
     private HashMap<String, TvSerie> tvSerieMap;
+    private ExecutorService executorService;
+
+
 
     public TvSerieCSVRepository(File file) {
         filnavn = file;
         tvSerieMap = new HashMap<>();
+        executorService = Executors.newSingleThreadExecutor();
         try {
             InputStream inputStream = new FileInputStream(file);
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
@@ -27,7 +33,12 @@ public class TvSerieCSVRepository implements TvSerieRepository {
                     firstLine = false;
                     continue;
                 }
+
                 String[] values = line.split(";");
+                if (values.length < 11) {
+                    System.err.println("Skipping line with incorrect format: " + line);
+                    continue;
+                }
                 String tvSerieTittel = values[0];
                 String beskrivelse = values[1];
                 LocalDate utgivelsesdato = LocalDate.parse(values[2]);
@@ -39,10 +50,13 @@ public class TvSerieCSVRepository implements TvSerieRepository {
                 int spilletid = Integer.parseInt(values[8]);
                 LocalDate eputgivelsesdato = LocalDate.parse(values[9]);
                 String epbildeurl = values[10];
+
                 tvSerieMap.computeIfAbsent(tvSerieTittel, tittel -> new TvSerie(tvSerieTittel, beskrivelse, utgivelsesdato, bildeurl))
                         .leggTilEpisode(new Episode(episodeTittel, epBeskrivelse, episodeNummer, sesongNummer,
                                 spilletid, eputgivelsesdato, epbildeurl));
+
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,16 +66,21 @@ public class TvSerieCSVRepository implements TvSerieRepository {
         bw.write(String.format("%s,%d,%d,%d%n", tvSerie.getTittel(), episode.getSesongNummer(), episode.getEpisodeNummer(), episode.getSpilletid()));
     }
     private void writeToCSV() {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filnavn))) {
-            bw.write("TvSerieTittel,SesongNr,EpisodeNr,Spilletid\n");
-            for (TvSerie tvSerie : tvSerieMap.values()) {
-                for (Episode episode : tvSerie.getEpisoder()) {
-                    writeEpisodeToCSV(bw, tvSerie, episode);
+        executorService.submit(new Runnable() {
+            @Override
+            public void run() {
+                try (BufferedWriter bw = new BufferedWriter(new FileWriter(filnavn))) {
+                    bw.write("TvSerieTittel,SesongNr,EpisodeNr,Spilletid\n");
+                    for (TvSerie tvSerie : tvSerieMap.values()) {
+                        for (Episode episode : tvSerie.getEpisoder()) {
+                            writeEpisodeToCSV(bw, tvSerie, episode);
+                        }
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        });
     }
 
     @Override
@@ -98,10 +117,7 @@ public class TvSerieCSVRepository implements TvSerieRepository {
         return false;
     }
 
-    @Override
-    public boolean leggTilEpisode(String tvSerieTittel, int sesongNr, Episode episode) {
-        return false;
-    }
+
 
 
     @Override
@@ -137,6 +153,21 @@ public class TvSerieCSVRepository implements TvSerieRepository {
     }
 
     @Override
+    public void opprettEpisode(String tvSerieTittel, String tittel, String beskrivelse, int episodeNummer, int sesongNummer, int spilletid, LocalDate utgivelsesdato, String bildeUrl) {
+
+    }
+
+    @Override
+    public void oppdaterEpisode(String tvSerieTittel, String tittel, int sesongNummer, int episodeNummer, String beskrivelse, int spilletid, LocalDate utgivelsesdato, String bildeUrl) {
+
+    }
+
+    @Override
+    public boolean slettEpisode(String tittel, int episodeNr, int sesongNr) {
+        return false;
+    }
+
+    @Override
     public boolean oppdaterTvSerie(TvSerie tvSerie) {
         if (tvSerieMap.containsKey(tvSerie.getTittel())) {
             tvSerieMap.put(tvSerie.getTittel(), tvSerie);
@@ -156,10 +187,6 @@ public class TvSerieCSVRepository implements TvSerieRepository {
         return false;
     }
 
-    @Override
-    public boolean leggTilEpisode(String tvSerieTittel, Episode episode) {
-        return false;
-    }
 
 
     @Override
@@ -167,18 +194,33 @@ public class TvSerieCSVRepository implements TvSerieRepository {
         return false;
     }
 
+
+        @Override
+        public boolean leggTilEpisode(String tvSerieTittel, Episode episode) {
+            TvSerie tvSerie = tvSerieMap.get(tvSerieTittel);
+            if (tvSerie != null) {
+                tvSerie.leggTilEpisode(episode);
+                writeToCSV();
+                return true;
+            }
+            return false;
+        }
     @Override
-    public boolean slettEpisode(String tvSerieTittel, int sesongNr, int episodeNr) {
+    public boolean updateEpisode(String tvSerieTittel, int sesongNr, int episodeNr, String episodeTittel, String beskrivelse,
+                                 int spilletid, LocalDate utgivelsesdato, String bildeurl) {
         TvSerie tvSerie = tvSerieMap.get(tvSerieTittel);
         if (tvSerie != null) {
-            boolean episodeSlettet = tvSerie.slettEpisode(sesongNr, episodeNr);
-            if (episodeSlettet) {
+            Episode episode = tvSerie.getEpisode(sesongNr, episodeNr);
+            if (episode != null) {
+                episode.setTittel(episodeTittel);
+                episode.setBeskrivelse(beskrivelse);
+                episode.setSpilletid(spilletid);
+                episode.setUtgivelsesdato(utgivelsesdato);
+                episode.setBildeUrl(bildeurl);
                 writeToCSV();
+                return true;
             }
-            return episodeSlettet;
         }
         return false;
     }
-
-
-}
+    }

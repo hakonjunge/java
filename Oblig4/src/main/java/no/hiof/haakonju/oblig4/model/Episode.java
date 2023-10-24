@@ -58,4 +58,5 @@ public class Episode extends Produksjon implements Comparable<Episode> {
     public int compareTo(@NotNull Episode annenEpisode) {
         return this.episodeNummer - annenEpisode.getEpisodeNummer();
     }
+
 }

@@ -97,11 +97,6 @@ public class TvSerieJSONRepository implements TvSerieRepository {
     }
 
     @Override
-    public boolean leggTilEpisode(String tvSerieTittel, int sesongNr, Episode episode) {
-        return false;
-    }
-
-    @Override
     public boolean oppdaterTvSerie(TvSerie tvSerie) {
         return false;
     }
@@ -121,19 +116,6 @@ public class TvSerieJSONRepository implements TvSerieRepository {
         return false;
     }
 
-    @Override
-    public boolean slettEpisode(String tvSerieTittel, int sesongNr, int episodeNr) {
-        TvSerie tvSerie = getTvSerie(tvSerieTittel);
-        if (tvSerie != null) {
-            Episode episodeToRemove = tvSerie.getEpisode(sesongNr, episodeNr);
-            if (episodeToRemove != null) {
-                tvSerie.fjernEpisode(episodeToRemove);
-                skrivTilFil(getfileName(), tvSeries);
-                return true;
-            }
-        }
-        return false;
-    }
 
     @Override
     public Episode createEpisode(String tvSerieTittel, int sesongNr, String episodeTittel, String beskrivelse, int episodeNummer, int spilletid, LocalDate utgivelsesdato, String bildeurl) {
@@ -144,4 +126,25 @@ public class TvSerieJSONRepository implements TvSerieRepository {
     public boolean oppdaterEpisode(String tvSerieTittel, int sesongNr, int episodeNr, String episodeTittel, String beskrivelse, int spilletid, LocalDate utgivelsesdato, String bildeurl) {
         return false;
     }
+
+    @Override
+    public void opprettEpisode(String tvSerieTittel, String tittel, String beskrivelse, int episodeNummer, int sesongNummer, int spilletid, LocalDate utgivelsesdato, String bildeUrl) {
+
+    }
+
+    @Override
+    public void oppdaterEpisode(String tvSerieTittel, String tittel, int sesongNummer, int episodeNummer, String beskrivelse, int spilletid, LocalDate utgivelsesdato, String bildeUrl) {
+
+    }
+
+    @Override
+    public boolean slettEpisode(String tittel, int episodeNr, int sesongNr) {
+        return false;
+    }
+
+    @Override
+    public boolean updateEpisode(String tvSerieTittel, int sesongNr, int episodeNr, String episodeTittel, String beskrivelse, int spilletid, LocalDate utgivelsesdato, String bildeurl) {
+        return false;
+    }
+
 }
